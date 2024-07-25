@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './tailwind-output.css';
+
+:root {
+    --color-primary: #FF9D00;
+    --color-secondary: #0062FF;
+
+}
+
+.navbar {
+    @apply bg-black bg-opacity-40 p-2 text-white w-full sticky left-0 top-0 z-50;
+}
+
+.navbar-brand {
+    @apply text-white text-lg font-bold flex justify-center items-center;
+}
+
+.navbar-links {
+    @apply  flex-col md:flex-row md:flex space-x-6 items-center; 
+}
+
+.navbar-link {
+    @apply text-white duration-1000 hover:scale-110 font-bold flex space-x-1 items-center;
+}
+.navbar-links-img{
+ @apply w-5 h-5;
+}
+.homepage {
+    @apply md:grid md:grid-cols-2 ;
+}
+.homepage-left{
+    @apply bg-gray-50  p-8 md:p-20 pt-7 md:pt-16  z-40;
+}
+.homepage-right{
+    @apply  relative z-30 mb-56 md:mb-24 lg:mb-0;
+}
+
+/* -----------------------------------------------Skills----------------------------------------------------- */
+
+.skill-bar-container {
+    @apply w-full mx-auto md:grid md:grid-cols-2 pt-10 p-4 md:p-20 md:gap-x-10 gap-x-4 bg-white bg-opacity-50 relative;
+  }
+  
+  .skill-bar {
+    @apply flex items-center my-2;
+  }
+  
+  .skill-bar-label {
+    @apply w-24 md:w-32 text-left mr-2 md:mr-5 font-bold;
+  }
+  
+  .skill-bar-value-container {
+    @apply flex-grow bg-gray-300 rounded overflow-hidden;
+  }
+  
+  .skill-bar-value {
+    @apply h-3 bg-gray-900 rounded-l;
+  }
+  
+  .skill-bar-value-text {
+    @apply w-12 text-right ml-2;
+  }
+
+  /* -------------------------------Call To Action--------------------------------------------------------------------- */
+.cta-section {
+  @apply bg-gray-900 text-white py-12;
+}
+
+.cta-container {
+  @apply container mx-auto text-center;
+}
+
+.cta-heading {
+  @apply text-3xl font-bold mb-4;
+}
+
+.cta-text {
+  @apply text-lg mb-8;
+}
+
+.cta-buttons {
+  @apply flex justify-center space-x-4;
+}
+
+.cta-button {
+  @apply bg-white text-black font-semibold px-6 py-3 rounded-md cursor-pointer hover:scale-105;
+}
+/* --------------------------------Project & Scroll Bar----------------------------------------------------------------------------------- */
+/* styles.css */
+.project-big-container{
+  @apply flex gap-16 overflow-x-scroll   scrollbar-custom bg-transparent bg-white opacity-100 md:px-20 md:pt-20 md:pb-2 md:mt-0 mt-5;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  height: 12px; /* Adjust scrollbar height */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #ffffff; /* Scrollbar track color */
+  border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar thumb color */
+  border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Scrollbar thumb hover color */
+}
+/* ----------------------------------------Contacts -------------------------------------------------- */
+.contact-form {
+  @apply bg-white text-black md:py-8 md:pr-20 p-4;
+}
+
+.input-field {
+  @apply px-3 py-2 bg-gray-300 border  rounded-md shadow-sm focus:outline-none ;
+}
+
+.textarea-field {
+  @apply px-3 py-2 bg-gray-300 border  rounded-md shadow-sm focus:outline-none ;
+}
+
+.submit-button {
+  @apply px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500;
+}
+
+
+
+  
