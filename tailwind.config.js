@@ -13,6 +13,9 @@ module.exports = {
         handwriting: ['"Great Vibes"', 'cursive'],
         luxury: ['"Playfair Display"', 'serif'],
       },
+      backgroundImage: {
+        'radial-gradient': 'radial-gradient(var(--tw-gradient-stops))',
+      },
     },
   },
   plugins: [],
