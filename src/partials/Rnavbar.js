@@ -50,8 +50,12 @@ const Navbar = () => {
                         <h1>Menu</h1>
                     </a>
                     <a href="#special" className="navbar-link">
-                        <img src='specials.svg' className='navbar-links-img' />
+                        <img src='special.svg' className='navbar-links-img' />
                         <h1>Specials</h1>
+                    </a>
+                    <a href="#chef" className="navbar-link">
+                        <img src='specials.svg' className='navbar-links-img' />
+                        <h1>Chefs</h1>
                     </a>
                    
                     <a href="#About" className="navbar-link">
