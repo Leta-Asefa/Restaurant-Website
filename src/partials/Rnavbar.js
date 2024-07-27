@@ -42,7 +42,7 @@ const Navbar = () => {
                     </a>
 
                     <a href="#services" className="navbar-link">
-                        <img src='services.svg' className='w-7 h-7' />
+                        <img src='services.svg' className='md:w-7 md:h-7 w-5 h-5' />
                         <h1>Services</h1>
                     </a>
                     <a href="#menu" className="navbar-link">

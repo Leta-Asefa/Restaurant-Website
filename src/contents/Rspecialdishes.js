@@ -42,16 +42,19 @@ const SpecialDish = () => {
 
 
       <h1 className="text-4xl font-bold">Our Special Dishes</h1>
-      <p className="text-sm w-96 mx-auto">Savor our chef's finest creations, crafted with fresh ingredients and bursting with flavors to delight your palate.</p>
-      <div className="flex justify-center gap-24 p-20">
+      <p className="text-sm md:w-96 w-79 mx-auto p-4 md:p-0">Savor our chef's finest creations, crafted with fresh ingredients and bursting with flavors to delight your palate.</p>
+
+      <div className="md:flex md:justify-center md:flex-row gap-24 md:p-20 p-4">
+
         {specialDishes.map(dish => {
-          return <div className="w-40">
+          return <div className="w-40 mx-auto md:mx-0">
             <img src={dish.image} className="w-40" />
             <h1 className="font-bold">{dish.name}</h1>
             <p>{dish.description}</p>
             <footer className="font-semibold">500 ETB ⭐⭐⭐⭐⭐ </footer>
           </div>
         })}
+
       </div>
 
     </motion.div>

@@ -12,9 +12,9 @@ const Chefs = () => {
     });
 
     return ( 
-        <div className="px-10 py-20" >
+        <div className="md:px-10 px-4 md:py-20 py-10 " >
             
-            <h1 className="text-center font-bold text-4xl">Our Chefs</h1>
+            <h1 className="text-center font-bold text-4xl mb-4 md:mb-0">Our Chefs</h1>
             <motion.img
             ref={ref}
             animate={{ opacity: inView ? 1 : 0 }}

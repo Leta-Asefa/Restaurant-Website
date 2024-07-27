@@ -56,12 +56,12 @@ const Services = () => {
             className="relative"
         >
 
-            <h1 className="text-center text-5xl font-bold">Services</h1>
-            <h1 className=" text-sm text-center mx-auto" style={{ width: "53%" }}> We are excited to present the following services to enhance your dining experience and ensure your satisfaction. Explore our offerings designed to meet your needs and exceed your expectations. </h1>
+            <h1 className="text-center md:text-5xl text-4xl font-bold">Services</h1>
+            <h1 className=" text-sm text-center mx-auto w-70 md:w-53 md:px-2 p-3" > We are excited to present the following services to enhance your dining experience and ensure your satisfaction. Explore our offerings designed to meet your needs and exceed your expectations. </h1>
 
 
 
-            <dvi className="grid grid-cols-3 px-40 py-10 gap-10">
+            <dvi className="grid grid-cols-1 md:grid-cols-3 md:px-40 px-4 py-10 gap-10">
 
                 {
                     services.map(service => {

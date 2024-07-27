@@ -17,11 +17,11 @@ const HomePage = () => {
         >
 
             <div className='space-y-2' style={{height:"80%"}}>
-                <p className=" text-8xl  font-bold ">ABC <br>
-                </br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Food <span className="text-red-50">&</span> Restaurant</p>
+                <p className=" md:text-8xl text-3xl  font-bold ">ABC <br>
+                </br> <span className='hidden md:inline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </span> Food <span className="text-red-50">&</span> Restaurant</p>
                 <div>
                     <p className=" text-lg font-semibold ">Delicious Moments, Memorable Tastes</p>
-                    <div className=' text-3xl font-semibold'> We Offer
+                    <div className=' md:text-3xl text-lg font-semibold'>We Offer
                         <Typewriter
                             words={["  Delicious Specialty Dishes ", " Fresh, Local Ingredients", " Memorable Dining Experiences", " Seasonal And Unique Menus"]}
                             loop={true}
@@ -32,7 +32,7 @@ const HomePage = () => {
                             delaySpeed={1000}
                         />
                     </div>
-                    <div className='text-sm mt-4 px-40' >
+                    <div className='text-sm mt-4 md:px-40 px-1 ' >
                     Welcome to ABC Restaurant, where exceptional quality meets unparalleled customer service. Our innovative approach to dining redefines the restaurant experience, offering a blend of fresh, expertly crafted dishes and attentive service. Discover a new standard of culinary excellence and hospitality that sets us apart, ensuring every visit is a memorable delight.
                     </div>
 
@@ -50,10 +50,10 @@ const HomePage = () => {
 
             
             <div className='absolute bottom-40 right-10 flex justify-center gap-2 items-center'> 
-                <img src='deliveryman.svg' className='w-20 h-20' />
-                <p className='text-center text-3xl font-bold text-red-500'>
+                <img src='deliveryman.svg' className='md:w-20 md:h-20 w-10 h-10' />
+                <p className='text-center md:text-3xl text-xl font-bold text-red-500'>
                     <h1>Delivery</h1>
-                    <h1 className='flex items-center'><img src='phone.svg' className='w-8 h-8'/>    9095</h1>
+                    <h1 className='flex items-center'><img src='phone.svg' className='md:w-8 md:h-8 w-5 h-5'/>    9095</h1>
                 </p>
             </div>
 

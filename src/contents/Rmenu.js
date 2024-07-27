@@ -149,7 +149,7 @@ const Menu = () => {
     return (
         <div className='relative'>
             <CallUsNow/>
-        <div className="grid grid-cols-12 p-20 gap-5 bg-gray-800 text-white">
+        <div className="grid md:grid-cols-12 grid-cols-1 md:p-20 p-4 md:gap-5 bg-gray-800 text-white">
             
 
                 <motion.div
