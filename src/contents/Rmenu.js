@@ -149,7 +149,7 @@ const Menu = () => {
     return (
         <div className='relative'>
             <CallUsNow/>
-        <div className="grid grid-cols-12 p-20 gap-5 bg-orange-100">
+        <div className="grid grid-cols-12 p-20 gap-5 bg-gray-800 text-white">
             
 
                 <motion.div
@@ -170,15 +170,15 @@ const Menu = () => {
                     className="col-span-9  p-4 rounded-lg"
                 >
                 <header className="flex space-x-4 mb-4">
-                    <button onClick={() => handleCategoryChange('foods')} className={`p-2 rounded-md font-bold ${currentCategory === 'foods' ? 'bg-orange-300' : ''}`}>Foods</button>
-                    <button onClick={() => handleCategoryChange('desserts')} className={`p-2 rounded-md font-bold ${currentCategory === 'desserts' ? 'bg-orange-300' : ''}`}>Desserts</button>
-                    <button onClick={() => handleCategoryChange('hotDrinks')} className={`p-2 rounded-md font-bold ${currentCategory === 'hotDrinks' ? 'bg-orange-300' : ''}`}>Hot Drinks</button>
-                    <button onClick={() => handleCategoryChange('drinks')} className={`p-2 rounded-md font-bold ${currentCategory === 'drinks' ? 'bg-orange-300' : ''}`}>Soft Drinks</button>
+                    <button onClick={() => handleCategoryChange('foods')} className={`p-1 rounded-md font-bold ${currentCategory === 'foods' ? 'bg-white text-black' : ''}`}>Foods</button>
+                    <button onClick={() => handleCategoryChange('desserts')} className={`p-1 rounded-md font-bold ${currentCategory === 'desserts' ? 'bg-white text-black' : ''}`}>Desserts</button>
+                    <button onClick={() => handleCategoryChange('hotDrinks')} className={`p-1 rounded-md font-bold ${currentCategory === 'hotDrinks' ? 'bg-white text-black' : ''}`}>Hot Drinks</button>
+                    <button onClick={() => handleCategoryChange('drinks')} className={`p-1 rounded-md font-bold ${currentCategory === 'drinks' ? 'bg-white text-black' : ''}`}>Soft Drinks</button>
                 </header>
 
                 <main className="space-y-2">
                     {getCurrentItems().map(item => (
-                        <div key={item.name} className="flex justify-between bg-orange-300 p-2 rounded-lg">
+                        <div key={item.name} className="flex justify-between bg-white text-black p-2 rounded-lg">
                             <div className="flex gap-2">
 
                                 <img src={`${currentCategory === 'foods' ? 'food1.jpg' : ''} 
@@ -203,7 +203,7 @@ const Menu = () => {
                             <button
                                 key={number}
                                 onClick={() => setCurrentPage(number)}
-                                className={`px-3 py-1 rounded ${currentPage === number ? 'bg-orange-500 text-white' : 'bg-gray-200'}`}
+                                className={`px-3 py-1 rounded ${currentPage === number ? 'bg-gray-50 text-black' : 'bg-gray-700'}`}
                             >
                                 {number}
                             </button>
