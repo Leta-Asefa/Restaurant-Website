@@ -46,7 +46,7 @@ const Navbar = () => {
                         <h1>Services</h1>
                     </a>
                     <a href="#menu" className="navbar-link">
-                        <img src='foodMenu.svg' className='navbar-links-img' />
+                        <img src='foodmenu2.svg' className='navbar-links-img' />
                         <h1>Menu</h1>
                     </a>
                     <a href="#special" className="navbar-link">
