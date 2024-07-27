@@ -20,7 +20,7 @@ const Navbar = () => {
 
 
                 <div className="navbar-brand font-handwriting2">
-                    <img src="Rlogo.png" className='w-10 h-10 mr-5' />
+                    <img src="logo.svg" className='w-14 h-14 mr-5' />
                     <p  >ABC Restaurant</p>
                 </div>
 
