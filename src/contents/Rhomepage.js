@@ -13,7 +13,7 @@ const HomePage = () => {
         variants={container}
         initial="hidden"
         animate="visible"
-        className="mx-auto text-center  h-screen text-white font-sans relative z-50  mt-12 p-2 pl-10 "
+        className="mx-auto text-center  h-screen text-white font-sans relative z-50  mt-12 p-2 md:pl-10 "
         >
 
             <div className='space-y-2' style={{height:"80%"}}>
