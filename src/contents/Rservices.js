@@ -51,7 +51,7 @@ const Services = () => {
     return (
         <motion.div
             ref={ref}
-            animate={{ opacity: inView ? 1 : 0 }}
+            animate={{ y: inView ? 0 : -70 }}
             transition={{ duration: 1 }}
             className="relative"
         >

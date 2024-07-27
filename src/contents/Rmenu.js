@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import CallUs from '../partials/callus';
 import CallUsNow from './Rcallus';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
 
 const Menu = () => {
 
@@ -87,6 +89,13 @@ const Menu = () => {
     const itemsPerPage = 7;
     let src
 
+
+    const { ref, inView } = useInView({
+        triggerOnce: false, // Ensures animation only happens once
+        threshold: 0.2, // Defines how much of the element is visible before triggering
+    });
+
+
     const getCurrentItems = () => {
         let currentItems;
         switch (currentCategory) {
@@ -143,13 +152,23 @@ const Menu = () => {
         <div className="grid grid-cols-12 p-20 gap-5 bg-orange-100">
             
 
-            <div className="col-span-3 flex flex-col justify-center text-center">
+                <motion.div
+                     ref={ref}
+                     animate={{ y: inView ? 0 : -70 }}
+                     transition={{ duration: 1 }}
+                    className="col-span-3 flex flex-col justify-center text-center"
+                >
                 <img src="menu2.jpg" className="w-full h-auto" />
                 <h1 className='font-bold text-xl'>Discover Our Menu</h1>
                 <p>Delight in an array of culinary masterpieces crafted to excite your taste buds and elevate your dining experience.</p>
-            </div>
+            </motion.div>
 
-            <div className="col-span-9  p-4 rounded-lg">
+                <motion.div
+                     ref={ref}
+                     animate={{ x: inView ? 0 : -50 }}
+                     transition={{ duration: 1 }}
+                    className="col-span-9  p-4 rounded-lg"
+                >
                 <header className="flex space-x-4 mb-4">
                     <button onClick={() => handleCategoryChange('foods')} className={`p-2 rounded-md font-bold ${currentCategory === 'foods' ? 'bg-orange-300' : ''}`}>Foods</button>
                     <button onClick={() => handleCategoryChange('desserts')} className={`p-2 rounded-md font-bold ${currentCategory === 'desserts' ? 'bg-orange-300' : ''}`}>Desserts</button>
@@ -191,7 +210,7 @@ const Menu = () => {
                         ))}
                     </div>
                 </main>
-            </div>
+            </motion.div>
             </div>
         </div>
     );

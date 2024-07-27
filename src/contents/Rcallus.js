@@ -17,7 +17,7 @@ const CallUsNow = () => {
         ref={ref}
         animate={{ opacity: inView ? 1 : 0 }} // Slide in when in view
         transition={{ duration: 3 }}
-            className=" text-red-600 bg-white rounded-lg text-center shadow-md flex justify-center items-center sticky top-14 left-0">
+            className=" text-red-600 bg-white rounded-lg text-center shadow-md flex justify-center items-center sticky top-16 left-0">
 
             <img src="callus.webp" className="w-14" />
 

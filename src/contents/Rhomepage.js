@@ -36,8 +36,8 @@ const HomePage = () => {
                     Welcome to ABC Restaurant, where exceptional quality meets unparalleled customer service. Our innovative approach to dining redefines the restaurant experience, offering a blend of fresh, expertly crafted dishes and attentive service. Discover a new standard of culinary excellence and hospitality that sets us apart, ensuring every visit is a memorable delight.
                     </div>
 
-                    <div   className='flex justify-center gap-5 p-2 rounded-lg'>
-                   <a href='https://github.com/Leta-Asefa'><img src='youtube.svg' className='w-8 h-8 hover:scale-110' /></a> 
+                    <div   className='flex justify-center gap-5 p-2 rounded-lg '>
+                   <a href='https://github.com/Leta-Asefa'><img src='youtube.svg' className='w-8 h-8 hover:scale-110 ' /></a> 
                    <a href='https://www.linkedin.com/in/leta-asefa/'><img src='linkedin-svgrepo-com.svg' className='w-9 h-9 hover:scale-110' /></a>
                    <a href='https://t.me/letaasefa'><img src='telegram-svgrepo-com.svg' className='w-9 h-9 hover:scale-110' /></a>
                    <a href='mailto:letaassefa7@gmail.com'><img src='gmail-svgrepo-com.svg' className='w-8 h-8 hover:scale-110' /></a>
