@@ -49,7 +49,7 @@ const HomePage = () => {
             </div>
 
             
-            <div className='absolute bottom-40 right-10 flex justify-center gap-2 items-center'> 
+            <div className='absolute bottom-52 md:bottom-40 right-10 flex justify-center gap-2 items-center'> 
                 <img src='deliveryman.svg' className='md:w-20 md:h-20 w-10 h-10' />
                 <p className='text-center md:text-3xl text-xl font-bold text-red-500'>
                     <h1>Delivery</h1>

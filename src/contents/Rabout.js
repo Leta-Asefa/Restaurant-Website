@@ -41,7 +41,7 @@ const AboutUs = () => {
             <div className="">
                 <motion.img
                      ref={ref}
-                     animate={{ x: inView ? 0 : 30 }}
+                     animate={{ y: inView ? 0 : -50 }}
                      transition={{ duration: 1 }}
                     src="owner.jpg" alt="About Us" className="w-full h-auto rounded-lg shadow-lg" />
             </div>
