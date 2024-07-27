@@ -12,7 +12,7 @@ const Chefs = () => {
     });
 
     return ( 
-        <div className="p-2" >
+        <div className="px-10 py-20" >
             
             <h1 className="text-center font-bold text-4xl">Our Chefs</h1>
             <motion.img
@@ -22,7 +22,7 @@ const Chefs = () => {
                 src="chefs.webp"
                 className="mx-auto"
             />
-            <p className="text-center">Our restaurant boasts a team of renowned chefs with extensive experience, dedicated to crafting exceptional dishes. Their expertise ensures every meal is prepared to meet and exceed your expectations. Whether you have specific preferences or dietary needs, our chefs are committed to delivering a memorable dining experience that caters to your tastes and satisfaction.</p>
+            <p className="text-center text-lg">Our restaurant boasts a team of renowned chefs with extensive experience, dedicated to crafting exceptional dishes. Their expertise ensures every meal is prepared to meet and exceed your expectations. Whether you have specific preferences or dietary needs, our chefs are committed to delivering a memorable dining experience that caters to your tastes and satisfaction.</p>
         </div>
      );
 }

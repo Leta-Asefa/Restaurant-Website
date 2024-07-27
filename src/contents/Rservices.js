@@ -61,14 +61,14 @@ const Services = () => {
 
 
 
-            <dvi className="grid grid-cols-3 p-20 gap-10">
+            <dvi className="grid grid-cols-3 px-40 py-10 gap-10">
 
                 {
                     services.map(service => {
                         return <div className="border-white border-2 hover:border-black hover:rounded-md p-1">
                             <img src={service.image} className="w-full h-52 object-cover rounded-lg" />
                             <h1 className="font-bold text-2xl">{service.header}</h1>
-                            <p>{service.description}</p>
+                            <p className='text-sm'>{service.description}</p>
                         </div>
                     })
                 }
