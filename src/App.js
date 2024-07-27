@@ -9,7 +9,9 @@ import SpecialDish from "./contents/Rspecialdishes";
 import BackgroundImage from "./partials/backgroundimage";
 import Callus from "./partials/callus";
 import Navbar from "./partials/Rnavbar";
-import Chefs from "./contents/Rchef";
+import Footer from "./contents/footer";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 
 function App() {
@@ -25,7 +27,8 @@ function App() {
       <SpecialDish/>
       <Gallery />
       <AboutUs />
-      <ContactUs/>
+      <ContactUs />
+      <Footer/>
       
      
 
