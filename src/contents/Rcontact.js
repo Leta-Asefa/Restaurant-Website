@@ -10,7 +10,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="bg-gray-100 py-20 px-14 md:px-20">
+    <div className="bg-gray-100 py-20 px-4 md:px-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div>
           <h3 className="text-2xl font-semibold mb-4 text-gray-800">Our Contacts</h3>
