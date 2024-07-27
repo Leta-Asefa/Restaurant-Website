@@ -24,7 +24,6 @@ function App() {
       <Menu />
       <SpecialDish/>
       <Gallery />
-      <Chefs/>
       <AboutUs />
       <ContactUs/>
       

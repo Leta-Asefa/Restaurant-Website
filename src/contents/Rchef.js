@@ -12,10 +12,12 @@ const Chefs = () => {
     });
 
     return ( 
-        <div className="px-40 py-5" >
+        <div className="p-2" >
+            
+            <h1 className="text-center font-bold text-4xl">Our Chefs</h1>
             <motion.img
             ref={ref}
-            animate={{ rotateY: inView ? 0 : 90 }}
+            animate={{ opacity: inView ? 1 : 0 }}
             transition={{ duration: 2 }}
                 src="chefs.webp"
                 className="mx-auto"
