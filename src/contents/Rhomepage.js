@@ -48,6 +48,14 @@ const HomePage = () => {
 
             </div>
 
+            
+            <div className='absolute bottom-40 right-10 flex justify-center gap-2 items-center'> 
+                <img src='deliveryman.svg' className='w-20 h-20' />
+                <p className='text-center text-3xl font-bold text-red-500'>
+                    <h1>Delivery</h1>
+                    <h1 className='flex items-center'><img src='phone.svg' className='w-8 h-8'/>    9095</h1>
+                </p>
+            </div>
 
 
         </motion.div>

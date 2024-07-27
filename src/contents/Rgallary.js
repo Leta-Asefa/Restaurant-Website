@@ -15,7 +15,7 @@ const Gallery = () => {
                 </div>
             })}
 
-            <img src='7.jpg' className="w-96" />
+            <img src='7.webp' className="w-96" />
 
         </div>
     );

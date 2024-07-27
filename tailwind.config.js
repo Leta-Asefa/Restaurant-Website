@@ -15,7 +15,10 @@ module.exports = {
       },
       backgroundImage: {
         'radial-gradient': 'radial-gradient(var(--tw-gradient-stops))',
-      },
+      }
+
+
+
     },
   },
   plugins: [],
